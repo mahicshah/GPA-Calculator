@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gpa_calculator.HelloController">
+   <children>
+      <Button fx:id="CalculateButton" layoutX="265.0" layoutY="377.0" mnemonicParsing="false" onAction="#calculation" style="-fx-background-color: gray;" text="Calculate" textFill="WHITE" />
+      <Button fx:id="ResetButton" layoutX="504.0" layoutY="409.0" mnemonicParsing="false" onAction="#reset" text="Reset" />
+      <Label layoutX="252.0" layoutY="413.0" prefHeight="45.0" prefWidth="57.0" text="GPA:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="GPA" layoutX="310.0" layoutY="413.0" prefHeight="45.0" prefWidth="76.0" text="0.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Subject" layoutX="38.0" layoutY="314.0" prefHeight="27.0" prefWidth="162.0" promptText="Subject" style="-fx-border-color: gray;" />
+      <TextField fx:id="Credits" layoutX="216.0" layoutY="314.0" prefHeight="25.0" prefWidth="129.0" promptText="Credits" style="-fx-border-color: gray;" />
+      <TextField fx:id="Grade" layoutX="361.0" layoutY="314.0" prefHeight="25.0" prefWidth="129.0" promptText="Grade" style="-fx-border-color: gray;" />
+      <Button fx:id="AddButton" layoutX="509.0" layoutY="314.0" mnemonicParsing="false" onAction="#add" text="Add" />
+      <ListView fx:id="myList_1" layoutX="37.0" layoutY="61.0" prefHeight="219.0" prefWidth="199.0" style="-fx-border-color: black;" />
+      <Label alignment="CENTER" layoutX="112.0" layoutY="40.0" prefHeight="17.0" prefWidth="50.0" text="Subject" textAlignment="CENTER" />
+      <Label layoutX="301.0" layoutY="40.0" text="Credits" />
+      <Label layoutX="465.0" layoutY="40.0" text="Grade" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="25.0" layoutX="37.0" layoutY="36.0" stroke="BLACK" strokeType="INSIDE" width="521.0" />
+      <Line endX="-11.0" endY="130.0" layoutX="247.0" layoutY="149.0" startX="-11.0" startY="-112.0" />
+      <Line endX="-21.0" endY="142.0" layoutX="426.0" layoutY="138.0" startX="-21.0" startY="-100.0" />
+      <ListView fx:id="myList_2" layoutX="236.0" layoutY="61.0" prefHeight="219.0" prefWidth="169.0" style="-fx-border-color: black;" />
+      <ListView fx:id="myList_3" layoutX="405.0" layoutY="61.0" prefHeight="219.0" prefWidth="153.0" style="-fx-border-color: black;" />
+   </children>
+</AnchorPane>
